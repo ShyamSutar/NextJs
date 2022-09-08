@@ -29,7 +29,7 @@ import * as fs from 'node:fs';
 export default async function handler(req, res) {
 
   let data = await fs.promises.readdir("blogdata")
-  let allBlogs=[""];
+  let allBlogs=[];
   let myFile;
   // data.forEach(async(item)=>{
   //   console.log(item);
