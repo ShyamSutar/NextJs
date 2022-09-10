@@ -1,11 +1,31 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+
+    
+    <div >
+    <style jsx>{`
+        
+        * {
+          
+          
+        }
+
+        main{
+          background-image: url('/homeImg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          height:94vh;
+        }
+
+        .s{
+          height:100%;
+        }
+
+      `}</style>
       <Head>
         <title>Hunting Coder</title>
         <meta name="description" content="A blog for hunting coders by a hunting coder" />
@@ -14,39 +34,28 @@ export default function Home() {
       </Head>
 
 
-      <main className={`${styles.main} `}>
-        <h1 className={`${styles.title} font-bold`}>
+      <main className=' flex justify-center items-center flex-col'>
+        <h1 className={`font-bold text-white text-6xl `}>
           Hunting Coder
         </h1>
         
-       <div className="pt-6"><Image src="/homeImg.jpg" width={532} height={400} className="rounded"/></div>
 
-        <p className={styles.description}>
+        <p className='text-white'>
          A blog for hunting coders by a hunting coder
         </p>
         
 
-      <div className="blogs">
-      <h2 className='text-3xl font-bold'>Popular Blogs</h2>
-        <div className="blogItem">
-          <h3 className="text-xl font-bold">How to learn JavaScript in 2022</h3>
-          <p>JavaScript is the language used to design logic for the web</p>
-          <h3 className="text-xl font-bold">How to learn JavaScript in 2022</h3>
-          <p>JavaScript is the language used to design logic for the web</p>
-          <h3 className="text-xl font-bold">How to learn JavaScript in 2022</h3>
-          <p>JavaScript is the language used to design logic for the web</p>
-        </div>
-      </div>
+     
       </main>
 
-      {/* <footer className={styles.footer}>
+      {/* <footer className={footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <span className={styles.logo}>
+          <span className={logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
