@@ -12,7 +12,7 @@ const Navbar2 = () => {
             alt="Flowbite Logo"
           />
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-            Flowbite
+            Hunting Coder
           </span>
         </Navbar.Brand>
         <Navbar.Toggle />

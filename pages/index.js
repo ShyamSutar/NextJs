@@ -25,6 +25,23 @@ export default function Home() {
           height:100%;
         }
 
+        .ti{
+          font-size: 72px;
+          background: -webkit-linear-gradient(#eee, #c1c1c1);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          filter: drop-shadow(2px 2px #333);
+        }
+
+        .ti2{
+          font-size: 22px;
+          background: -webkit-linear-gradient(#333, #eee);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          filter: drop-shadow(2px 2px #333);
+        }
+        
+
       `}</style>
       <Head>
         <title>Hunting Coder</title>
@@ -35,12 +52,13 @@ export default function Home() {
 
 
       <main className=' flex justify-center items-center flex-col'>
-        <h1 className={`font-bold text-white text-6xl `}>
+        <h1 className={`ti font-bold text-white text-6xl `}>
           Hunting Coder
         </h1>
         
 
-        <p className='text-white'>
+
+        <p className='ti2 text-white'>
          A blog for hunting coders by a hunting coder
         </p>
         
