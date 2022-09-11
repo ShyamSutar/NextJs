@@ -1,5 +1,6 @@
 import React,{useEffect, useState} from "react";
 import Link from "next/link";
+import { Card } from "flowbite-react";
 
 const Blog = (props) => {
 
@@ -12,8 +13,8 @@ const Blog = (props) => {
 
   return (
     <div>
-      <main className="text-center">
-
+      <main className="text-center ">
+{/* 
       {blogs.map((blogItem)=>{
         return <div key={blogItem.slug}>
         <h3 className="text-xl font-bold">
@@ -21,6 +22,19 @@ const Blog = (props) => {
             </h3>
             <p>{blogItem.content.substr(0,400)}</p>
         </div>
+      })} */}
+
+      {blogs.map((blogItem)=>{
+        return <div className="flex m-8 flex-wrap" key={blogItem.slug}>
+      <Link href={`/blogpost/${blogItem.slug}`}><a><Card>
+        <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        {blogItem.title}
+        </h5>
+        <p className="font-normal text-gray-700 dark:text-gray-400 text-justify">
+        {blogItem.content.substr(0,400)}
+        </p>
+      </Card></a></Link>
+</div>
       })}
 
         {/* <div className="blogs">
