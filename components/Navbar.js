@@ -4,7 +4,7 @@ import { Navbar } from "flowbite-react";
 const Navbar2 = () => {
   return (
     <div>
-      <Navbar fluid={true} rounded={true}>
+      <Navbar fluid={true} rounded={true} style={{background: '-webkit-linear-gradient(#eee, #c1c1c1);'}}>
         <Navbar.Brand >
           <img
             src="https://flowbite.com/docs/images/logo.svg"
